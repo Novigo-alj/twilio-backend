@@ -16,7 +16,7 @@ app.get('/audio/hold_music.mp3', (req, res) => {
 
 app.post('/api/databricks-proxy', async (req, res) => {
   try {
-    const response = await fetch("https://adb-176304745081516.16.azuredatabricks.net/serving-endpoints/agents_datalink-lineagedemo-cc_agent/invocations", {
+    const response = await fetch("https://adb-2240988394477041.1.azuredatabricks.net/serving-endpoints/agents_datalink-lineagedemo-cc_agent/invocations", {
       method: "POST",
       headers: {
         "Authorization": `Bearer ${DATABRICKS_TOKEN}`,
